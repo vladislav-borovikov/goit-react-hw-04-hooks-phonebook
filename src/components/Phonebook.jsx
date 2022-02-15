@@ -25,9 +25,7 @@ const  Phonebook = () => {
     if (findedContact) {
       alert(`${data.name} is already in contacts.`);
     } else
-    setContacts((prevState) => ({
-        contacts: [contact, ...prevState.contacts],
-      }));
+    setContacts([contact, ...contacts]);
   };
 
   const changFilter = (event) => {
